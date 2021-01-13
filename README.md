@@ -1,4 +1,4 @@
-# UBports GH Actions
+# UBports GH Actionss
 This repository enables images to be built from GitHub Actions.
 
 ![](https://github.com/ubports-lavender/ubports-ci/workflows/Build%20System%20Image/badge.svg)
