@@ -64,6 +64,7 @@ jobs:
     
     - name: Build HAL
       run: |
+        sudo apt-get install -y python-is-python2
         chmod +x build-hal.sh
         bash -x build-hal.sh
       shell: bash
