@@ -2,7 +2,9 @@
 source halium.env
 cd $ANDROID_ROOT
 
+
 source build/envsetup.sh
+bash hybris-patches/apply-patches.sh --mb
 export USE_CCACHE=1
 breakfast $DEVICE
 make -j$(nproc) mkbootimg
