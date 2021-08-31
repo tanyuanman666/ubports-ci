@@ -22,7 +22,7 @@ jobs:
 
     env:
       VENDOR: xiaomi
-      DEVICE: cactus
+      DEVICE: platina
       ANDROID_ROOT: /home/runner/work/halium/
 
     steps:
@@ -75,10 +75,10 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: halium-boot image
-        path: /home/runner/work/halium/out/target/product/clover/halium-boot.img
+        path: /home/runner/work/halium/out/target/product/platina/halium-boot.img
 
     - name : Upload system image
       uses: actions/upload-artifact@master
       with:
         name: System image
-        path: /home/runner/work/halium/out/target/product/clover/system.img
+        path: /home/runner/work/halium/out/target/product/platina/system.img
