@@ -6,7 +6,7 @@
 # Credit: https://github.com/P3TERX/Actions-OpenWrt
 #=================================================
 
-name: Build System Image
+name: Build Halium
 
 on: 
   push:
@@ -61,7 +61,7 @@ jobs:
         cd $ANDROID_ROOT
         repo init -u https://github.com/Halium/android -b halium-9.0 --depth=1
         mkdir -p $ANDROID_ROOT/.repo/local_manifests
-        wget https://raw.githubusercontent.com/tanyuanman666/local_manifests/halium-9.0/$DEVICE.xml -O $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml
+        wget https://raw.githubusercontent.com/tanyuanman666/local_manifests/halium-9.0/platina.xml -O $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml
         repo sync -j8 -c --no-clone-bundle --no-tags
     
     - name: Build HAL
