@@ -22,7 +22,7 @@ jobs:
 
     env:
       VENDOR: xiaomi
-      DEVICE: platina
+      DEVICE: 
       ANDROID_ROOT: /home/runner/work/halium/
 
     steps:
